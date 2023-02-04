@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Groupchat</title>
+</head>
+<body>
+    <header>
+<nav>
+    <ul>
+        <li>
+            <a href="/login">login User</a>
+        </li>
+        <li>
+            <a href="/">Group Massages</a>
+        </li>
+        <li>
+            <a href="/contactus">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+    </header>
+    <main>
+        <form onsubmit="localStorage.setItem('username', document.getElementById('username').value)" action="/name" method="POST">
+
+            <input id="username" type="text" name="username">
+        
+            <button type="submit">login User</button>
+        
+        </form>
+        </form>
+    </main>
+</body>
+</html>
